@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Accordion Component</title>
+  </head>
+  <body>
+    <div class="accordion-section">
+      <div class="accordion-title" onclick="toggleAccordion('section1')">
+        Section 1
+      </div>
+      <div class="accordion-content" id="section1">
+        <p>Content for Section 1 goes here.</p>
+      </div>
+    </div>
+
+    <div class="accordion-section">
+      <div class="accordion-title" onclick="toggleAccordion('section2')">
+        Section 2
+      </div>
+      <div class="accordion-content" id="section2">
+        <p>Content f for Section 2 goes here.</p>
+      </div>
+    </div>
+
+    <!-- Add more sections as needed -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
