@@ -1,14 +1,11 @@
 # Use a base image with necessary dependencies
-FROM base_image:tag
+FROM alpine:latest
 
 # Set the working directory
 WORKDIR /app
 
 # Copy your artifact into the container
-COPY your_artifact /app
+COPY target/ /app
 
 # Expose any required ports
-EXPOSE 8080
-
-# Specify the command to run your application
-CMD ["your_command_to_start"]
+EXPOSE 80
