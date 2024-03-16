@@ -2,6 +2,7 @@
 *.tfstate
 *.tfstate.*
 
+
 # Ignore lock files
 *.lock
 
